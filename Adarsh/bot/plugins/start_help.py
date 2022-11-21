@@ -19,6 +19,6 @@ async def help(_, m: Message):
     
 @StreamBot.on_message(filters.command(['about']))
 async def about(_, m: Message):
-    await m.reply(f'✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: Flash \n✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: href=https://t.me/Nexus_Shubhu>Shubham</a>',
+    await m.reply(f'✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: Flash \n<i>✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁:</i> <b> <a href='https://t.me/Nexus_Shubhu'>Shubham </a></b>',
                   
                   )
