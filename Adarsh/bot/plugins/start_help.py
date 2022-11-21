@@ -12,7 +12,7 @@ async def start(_, m: Message):
 
 @StreamBot.on_message(filters.command(['help']))
 async def help(_, m: Message):
-    await m.reply(f'i can convert any file into Download Link or Online Streaming Link! \n2GB+ files Supported ✅ \n18+ Content Not Allowed ⚠️ \nLinks are Permanent 🍀.
+    await m.reply(f'i can convert any file into Download Link or Online Streaming Link. \n2GB+ files Supported ✅. \n18+ Content Not Allowed ⚠️. \nLinks are Permanent 🍀.
                   ',
                  
                   )
