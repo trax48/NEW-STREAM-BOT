@@ -21,4 +21,4 @@ async def about(_, m: Message):
     await m.reply(f'✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: Flash \n✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: Shubham',
                   
                   )
-    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('My Owner 😎', url='https://t.me/Link_Reporter_Bot)]])
+    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('My Owner 😎', url='https://t.me/Link_Reporter_Bot')]])
