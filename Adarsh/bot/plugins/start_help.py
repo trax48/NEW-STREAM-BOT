@@ -1,7 +1,7 @@
 
 
 from pyrogram import filters, emoji
-from WebStreamer.bot import StreamBot
+from Adarsh.bot import StreamBot
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 
 @StreamBot.on_message(filters.command(['start', 'help']))
