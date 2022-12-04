@@ -19,10 +19,8 @@ async def help(_, m: Message):
     
 @StreamBot.on_message(filters.command(['about']))
 async def about(_, m: Message):
-        chat_id=m.chat.id,
-        photo ="https://telegra.ph/file/19eeb26fa2ce58765917a.jpg",
-        caption =(f'✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: Flash \n✯ 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: Shubham \n✯ 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈: [Moviesss4ers](https://t.me/Moviesss4ers) \n✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 \n✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: Python \n✯ 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴: Free \n✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: Koyeb',
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('My Owner 😎', url='https://t.me/Nexus_Shubhu')]])
+    await m.reply(f'✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: Flash \n✯ 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: Shubham \n✯ 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈: [Moviesss4ers](https://t.me/Moviesss4ers) \n✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 \n✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: Python \n✯ 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴: Free \n✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: Koyeb',
+    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('My Owner 😎', url='https://t.me/Nexus_Shubhu')]])
                   
                   )
 
