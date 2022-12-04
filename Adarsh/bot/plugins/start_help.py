@@ -22,3 +22,9 @@ async def about(_, m: Message):
     reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('My Owner 😎', url='https://t.me/Link_Reporter_Bot')]])
                   
                   )
+
+@StreamBot.on_message(filters.command(['players']))
+async def players(_, m: Message):
+    await m.reply(f'Dear Users, \n\nTo Streaming Your File in Players Open Links Through 1st Botton (ꜱᴛʀᴇᴀᴍ ɪɴ ᴘʟᴀʏᴇʀꜱ ⚡️) \nOpen in Chrome. \n\nMake Sure You've Good Internet Speed For Streaming On Players',
+                
+                  )
