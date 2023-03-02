@@ -67,7 +67,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="You are banned!\n\n  **ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ [Support](https://t.me/Link_Reporter_Bot) He Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
+                    text="You are banned!\n\n  **ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ [Support](https://t.me/fm_onr) He Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
                     
                     disable_web_page_preview=True
                 )
@@ -75,7 +75,7 @@ async def private_receive_handler(c: Client, m: Message):
         except UserNotParticipant:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="""<i>𝙹𝙾𝙸𝙽 UPDATES CHANNEL 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴 🔐</i>""",
+                text="""<i>🔑 ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ 🔐</i>""",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -90,7 +90,7 @@ async def private_receive_handler(c: Client, m: Message):
             await m.reply_text(e)
             await c.send_message(
                 chat_id=m.chat.id,
-                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ** [Support](https://t.me/Link_Reporter_Bot)",
+                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ** [Support](https://t.me/fm_onr)",
                 
                 disable_web_page_preview=True)
             return
@@ -100,7 +100,7 @@ async def private_receive_handler(c: Client, m: Message):
         online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         stream_link2 = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
        
-        msg_text ="""<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n\n<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n\n<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n\n<b>🚸 Nᴏᴛᴇ : Links Are Permanent Unless i Delete Your File From Database</b>"""
+        msg_text ="""<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n\n<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n\n<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n\n<b>🚸 Nᴏᴛᴇ : Links Are Permanent Unless i Delete Your File From Db\n\n ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @Fm_Onr </b>"""
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True,  quote=True)
         await m.reply_text(
