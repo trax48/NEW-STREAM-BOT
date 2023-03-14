@@ -13,14 +13,14 @@ async def start(_, m: Message):
 @StreamBot.on_message(filters.command(['help']))
 async def help(_, m: Message):
     await m.reply(f'i can convert any file into Download Link or Online Streaming Link! \n2GB+ files Supported ✅ \n18+ Content Not Allowed ⚠️ \nLinks are Permanent 🍀 \n\nFor More Help Press /players',
-    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('Any Queries DM Here ✅', url='https://t.me/Link_Reporter_Bot')]])
+    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('Any Queries DM Here ✅', url='https://t.me/syrus_143_hpy')]])
                   
                   )
     
 @StreamBot.on_message(filters.command(['about']))
 async def about(_, m: Message):
-    await m.reply(f'✯ ᴍʏ ɴᴀᴍᴇ: Flash \n✯ ᴍʏ ᴄʀᴇᴀᴛᴏʀ: Shubham \n✯ ᴘᴏᴡᴇʀᴇᴅ ʙʏ: [Moviesss4ers](https://t.me/Moviesss4ers) \n✯ ʟɪʙʀᴀʀʏ: Pyrogram \n✯ ʟᴀɴɢᴜᴀɢᴇ: Python \n✯ ᴅᴀᴛᴀʙᴀꜱᴇ: Free \n✯ ʙᴏᴛ ꜱᴇʀᴠᴇʀ: Koyeb',
-    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('My Owner 😎', url='https://t.me/Nexus_Shubhu')]])
+    await m.reply(f'✯ ᴍʏ ɴᴀᴍᴇ: Flash \n✯ ᴍʏ ᴄʀᴇᴀᴛᴏʀ: Shubham \n✯ ᴘᴏᴡᴇʀᴇᴅ ʙʏ: [FM](https://t.me/filmy_men) \n✯ ʟɪʙʀᴀʀʏ: Pyrogram \n✯ ʟᴀɴɢᴜᴀɢᴇ: Python \n✯ ᴅᴀᴛᴀʙᴀꜱᴇ: Free \n✯ ʙᴏᴛ ꜱᴇʀᴠᴇʀ: Koyeb',
+    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('My Owner 😎', url='https://t.me/syrus_143_hpy')]])
                   
                   )
 
