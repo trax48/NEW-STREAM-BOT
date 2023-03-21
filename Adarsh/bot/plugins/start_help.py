@@ -19,7 +19,7 @@ async def help(_, m: Message):
     
 @StreamBot.on_message(filters.command(['about']))
 async def about(_, m: Message):
-    await m.reply(f'✯ ᴍʏ ɴᴀᴍᴇ: Flash \n✯ ᴍʏ ᴄʀᴇᴀᴛᴏʀ: Shubham \n✯ ᴘᴏᴡᴇʀᴇᴅ ʙʏ: [FM](https://t.me/filmy_men) \n✯ ʟɪʙʀᴀʀʏ: Pyrogram \n✯ ʟᴀɴɢᴜᴀɢᴇ: Python \n✯ ᴅᴀᴛᴀʙᴀꜱᴇ: Free \n✯ ʙᴏᴛ ꜱᴇʀᴠᴇʀ: Koyeb',
+    await m.reply(f'✯ ᴍʏ ɴᴀᴍᴇ: Sandman \n✯ ᴍʏ ᴄʀᴇᴀᴛᴏʀ: Sandy \n✯ ᴘᴏᴡᴇʀᴇᴅ ʙʏ: [FM](https://t.me/filmy_men) \n✯ ʟɪʙʀᴀʀʏ: Pyrogram \n✯ ʟᴀɴɢᴜᴀɢᴇ: Python \n✯ ᴅᴀᴛᴀʙᴀꜱᴇ: Free \n✯ ʙᴏᴛ ꜱᴇʀᴠᴇʀ: Koyeb',
     reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('My Owner 😎', url='https://t.me/syrus_143_hpy')]])
                   
                   )
