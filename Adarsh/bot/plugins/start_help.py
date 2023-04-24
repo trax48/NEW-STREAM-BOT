@@ -38,7 +38,7 @@ async def link(_, m: Message):
     
 @StreamBot.on_message(filters.command(['mybio']))
 async def about(_, m: Message):
-    await m.reply("<b>Nothing<b>"
+    await m.reply("<b>Nothing<b>", 
     reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('My Owner 😎', url='https://t.me/syrus_143_hpy')]])
                   
                   )
