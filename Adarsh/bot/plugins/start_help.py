@@ -38,15 +38,7 @@ async def link(_, m: Message):
     
 @StreamBot.on_message(filters.command(['mybio']))
 async def about(_, m: Message):
-    await m.reply("""<b>✯ Mʏ Nᴀᴍᴇ : {}</b>
-✯ ʟᴏᴠᴇ: <a href=https://t.me/Syrus_143_hpy>ᴋs</a>
-✯ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/Filmy_men>ғɪʟᴍʏ ᴍᴇɴ</a>
-✯ ᴍʏ ʜᴜsʙᴀɴᴅ: <a href=https://t.me/Syrus_143_hpy>亗 𝗧𝗛𝗘 𝗦𝗔𝗡ᕲ𝗠𝗔𝗡</a>
-✯ ʟɪʙʀᴀʀʏ: ᴘʏʀᴏɢʀᴀᴍ
-✯ ʟᴀɴɢᴜᴀɢᴇ: ᴘʏᴛʜᴏɴ 𝟹
-✯ ᴅᴀᴛᴀʙᴀsᴇ: ᴍᴏɴɢᴏᴅʙ
-✯ sᴇʀᴠᴇʀ: ᴘʀᴠᴛ
-✯ ʙᴜɪʟᴅ sᴛᴀᴛᴜs: v2.0.1 [ ʙᴇᴛᴀ ]</b>"""
+    await m.reply("<b>Nothing<b>"
     reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('My Owner 😎', url='https://t.me/syrus_143_hpy')]])
                   
                   )
