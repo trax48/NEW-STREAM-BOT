@@ -27,8 +27,11 @@ async def help(_, m: Message):
     
     
 @StreamBot.on_message(filters.command(['link']))
-async def help(_, m: Message):
-    await m.reply(f'i can convert any file into Download Link or Online Streaming Link! \n2GB+ files Supported ✅ \n18+ Content Not Allowed ⚠️ \nLinks are Permanent 🍀 \n\nFor More Help Press /players',
+async def link(_, m: Message):
+    await m.reply_text(
+            text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link, stream_link2),
+            quote=True,
+            disable_web_page_preview=True,
     reply_markup=InlineKeyboardMarkup(
               [
                     [InlineKeyboardButton("🖥 ꜱᴛʀᴇᴀᴍ ɪɴ ᴘʟᴀʏᴇʀꜱ 🖥", url=stream_link)], #Stream Link
