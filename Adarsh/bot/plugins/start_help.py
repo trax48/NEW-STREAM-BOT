@@ -6,7 +6,10 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 
 @StreamBot.on_message(filters.command(['start']))
 async def start(_, m: Message):
-    await m.reply(f'Hi {m.from_user.mention(style="md")}, Send me a file to get Download stream link. \n\nIf You Want Help Press /help',
+    await StreamBot.send_photo(
+                chat_id=m.chat.id,
+                photo="https://telegra.ph/file/0dbf95d5548d9b24b491e.jpg",
+                caption="Send me a file to get Download stream link. \n\nIf You Want Help Press /help",
                 
                   )
 
