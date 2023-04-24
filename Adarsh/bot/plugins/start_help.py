@@ -8,8 +8,12 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 async def start(_, m: Message):
     await StreamBot.send_photo(
                 chat_id=m.chat.id,
-                photo="https://telegra.ph/file/0dbf95d5548d9b24b491e.jpg",
-                caption="Send me a file to get Download stream link. \n\nIf You Want Help Press /help",
+                photo="https://telegra.ph/file/94c74580a918cb9e6b18e.jpg",
+                caption="""ʜᴇʟʟᴏ {} 🥀
+ɪ ᴀᴍ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ ᴡɪᴛʜ ᴄʜᴀɴɴᴇʟ sᴜᴘᴘᴏʀᴛ.
+sᴇɴᴅ ᴍᴇ ᴀɴʏ ғɪʟᴇ ᴀɴᴅ ɢᴇᴛ ᴀ ᴅɪʀᴇᴄᴛ ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ & sᴛʀᴇᴀᴍ ʟɪɴᴋ ʙᴇᴛᴛᴇʀ ᴛʜᴇɴ ᴏᴛʜᴇʀs ʙᴏᴛs.!
+\n\nsᴇɴᴅ ᴍᴇ ᴀ ғɪʟᴇ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴜsᴇ ᴍᴇ 🥰
+\n\n©️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :- @Filmy_Men""",
                 
                   )
 
@@ -21,9 +25,17 @@ async def help(_, m: Message):
                   
                   )
     
-@StreamBot.on_message(filters.command(['about']))
+@StreamBot.on_message(filters.command(['mybio']))
 async def about(_, m: Message):
-    await m.reply(f'✯ ᴍʏ ɴᴀᴍᴇ: Sandman \n✯ ᴍʏ ᴄʀᴇᴀᴛᴏʀ: Sandy \n✯ ᴘᴏᴡᴇʀᴇᴅ ʙʏ: [FM](https://t.me/filmy_men) \n✯ ʟɪʙʀᴀʀʏ: Pyrogram \n✯ ʟᴀɴɢᴜᴀɢᴇ: Python \n✯ ᴅᴀᴛᴀʙᴀꜱᴇ: Free \n✯ ʙᴏᴛ ꜱᴇʀᴠᴇʀ: Koyeb',
+    await m.reply("""<b>✯ Mʏ Nᴀᴍᴇ : {}</b>
+✯ ʟᴏᴠᴇ: <a href=https://t.me/Syrus_143_hpy>ᴋs</a>
+✯ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/Filmy_men>ғɪʟᴍʏ ᴍᴇɴ</a>
+✯ ᴍʏ ʜᴜsʙᴀɴᴅ: <a href=https://t.me/Syrus_143_hpy>亗 𝗧𝗛𝗘 𝗦𝗔𝗡ᕲ𝗠𝗔𝗡</a>
+✯ ʟɪʙʀᴀʀʏ: ᴘʏʀᴏɢʀᴀᴍ
+✯ ʟᴀɴɢᴜᴀɢᴇ: ᴘʏᴛʜᴏɴ 𝟹
+✯ ᴅᴀᴛᴀʙᴀsᴇ: ᴍᴏɴɢᴏᴅʙ
+✯ sᴇʀᴠᴇʀ: ᴘʀᴠᴛ
+✯ ʙᴜɪʟᴅ sᴛᴀᴛᴜs: v2.0.1 [ ʙᴇᴛᴀ ]</b>"""
     reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('My Owner 😎', url='https://t.me/syrus_143_hpy')]])
                   
                   )
