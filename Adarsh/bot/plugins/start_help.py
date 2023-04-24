@@ -22,7 +22,7 @@ async def help(_, m: Message):
                   )
     
     
-@StreamBot.on_message(filters.command(['link']))
+@StreamBot.on_message(filters.command(['link') & (filters.document | filters.video | filters.audio | filters.photo) , group=4)
 async def link(_, m: Message):
     await m.reply_text(
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link, stream_link2),
