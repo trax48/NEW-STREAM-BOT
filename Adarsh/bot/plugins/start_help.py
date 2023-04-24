@@ -29,9 +29,13 @@ async def help(_, m: Message):
 @StreamBot.on_message(filters.command(['link']))
 async def help(_, m: Message):
     await m.reply(f'i can convert any file into Download Link or Online Streaming Link! \n2GB+ files Supported ✅ \n18+ Content Not Allowed ⚠️ \nLinks are Permanent 🍀 \n\nFor More Help Press /players',
-    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('Any Queries DM Here ✅', url='https://t.me/syrus_143_hpy')]])
+    reply_markup=InlineKeyboardMarkup(
+              [
+                    [InlineKeyboardButton("🖥 ꜱᴛʀᴇᴀᴍ ɪɴ ᴘʟᴀʏᴇʀꜱ 🖥", url=stream_link)], #Stream Link
+                    [InlineKeyboardButton('📩 ᴅᴏᴡɴʟᴏᴀᴅ 📩', url=online_link), #Download Link
+                    InlineKeyboardButton("📺 ꜱᴛʀᴇᴀᴍ 📺", url=stream_link2)]]), #Stream Link 2
 
-                  ) 
+              )
     
 @StreamBot.on_message(filters.command(['mybio']))
 async def about(_, m: Message):
