@@ -10,12 +10,10 @@ async def start(_, m: Message):
                 
                   )
 
+
 @StreamBot.on_message(filters.command(['help']))
 async def help(_, m: Message):
-    await StreamBot.send_photo(
-                chat_id=message.chat.id,
-                photo="https://telegra.ph/file/bb0d2a42531afe19f41d4.jpg",
-                Caption=" I can convert any file into Download Link or Online Streaming Link! \n2GB+ files Supported ✅ \n18+ Content Not Allowed ⚠️ \nLinks are Permanent 🍀 \n\nFor More Help Press /players",
+    await m.reply(f'i can convert any file into Download Link or Online Streaming Link! \n2GB+ files Supported ✅ \n18+ Content Not Allowed ⚠️ \nLinks are Permanent 🍀 \n\nFor More Help Press /players',
     reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('Any Queries DM Here ✅', url='https://t.me/syrus_143_hpy')]])
                   
                   )
